@@ -1,0 +1,16 @@
+makefile is a collection of rules.
+eachrule looks like this:
+
+target: dependency list
+    command line (preceded by a tab
+
+When building your code:
+stage 1: compile individual .cpp
+	hello.cpp -> hello.o
+	source file -> object code
+stage 2: link the object code
+	hello.o linked with library code
+	hello.o and library -> main (or whatever you want to call it)
+	link object code into binary executable
+
+use explicit rules vs implicit rules for makefile

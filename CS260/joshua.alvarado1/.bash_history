@@ -1,0 +1,1372 @@
+#1736186576
+ls
+#1736186583
+cd cs260/
+#1736186587
+mkdir week1
+#1736186683
+cd week1/
+#1736186692
+vim myutil.cpp
+#1736186803
+mv myutil.cpp myutil.h
+#1736186868
+ls
+#1736187104
+vim notes.txt
+#1736187630
+ls
+#1736187644
+make
+#1736187657
+ls
+#1736187660
+ls -l
+#1736187742
+make clean
+#1736187743
+ls
+#1736187830
+make
+#1736187831
+ls
+#1736187911
+vim notes.txt 
+#1736188414
+vim myutil
+#1736188417
+ls
+#1736188421
+vim myutil.h
+#1736188632
+vim ptr.cpp
+#1736189144
+main
+#1736189147
+make
+#1736189218
+vim main
+#1736189223
+ls
+#1736189228
+./main
+#1736189235
+vim main.cpp
+#1736189320
+make
+#1736189330
+vim main.cpp
+#1736189339
+vim ptr.cpp
+#1736189359
+ls
+#1736189366
+vim myutil.h 
+#1736189377
+make
+#1736189393
+vim ptr.cpp
+#1736196213
+vim gcbCmds.txt
+#1736196221
+ls
+#1736196281
+cd ..
+#1736196296
+ls -R lab1 > lab1.txt
+#1736196297
+ls
+#1736196303
+vim lab1.txt
+#1736196354
+cd lab1
+#1736196355
+ls
+#1736196362
+vim makefile
+#1736196612
+make
+#1736196615
+vim makefile
+#1736196703
+make
+#1736196710
+vim makefile
+#1736196836
+make
+#1736196843
+vim makefile
+#1736196862
+make
+#1736196869
+vim makefile
+#1736196881
+make
+#1736196884
+ls
+#1736196889
+make clean
+#1736196893
+vim makefile
+#1736196914
+make clean
+#1736196921
+make
+#1736196922
+ls
+#1736196928
+make clean
+#1736196930
+ls
+#1736196931
+make clean
+#1736196943
+make
+#1736196947
+make clean
+#1736196954
+make
+#1736196955
+ls
+#1736222665
+cd ..
+#1736222668
+mkdir temp
+#1736222958
+cd temp/
+#1736223032
+vim callstack.cpp
+#1736223640
+vim makefile
+#1736223829
+make
+#1736223851
+ls
+#1736223856
+vim makefile
+#1736223871
+make
+#1736223882
+vim makefile
+#1736223898
+make
+#1736223901
+ls
+#1736223904
+make clean
+#1736223912
+vim makefile
+#1736223932
+make clean
+#1736223936
+ls
+#1736223941
+make clean
+#1736223943
+vim makefile
+#1736223958
+make clean
+#1736223960
+ls
+#1736223963
+make
+#1736223964
+ls
+#1736223975
+./callstack.o
+#1736224442
+ls
+#1736224446
+make
+#1736224484
+cd ../week1/
+#1736224485
+ls
+#1736224523
+vim makefile.old
+#1736184075
+passwd
+#1736184211
+vim
+#1736184233
+apt
+#1736184237
+apt-get
+#1736184302
+vim
+#1736185143
+ls
+#1736185675
+chmod 700 ~
+#1736185684
+mkdir cs260
+#1736185686
+ls
+#1736185774
+mv ./hello.cpp ./cs260/hello.cpp
+#1736185776
+ls
+#1736185782
+cd cs260/
+#1736185790
+mkdir lab1
+#1736185803
+mv ./hello.cpp ./lab1/hello.cpp
+#1736185807
+cd lab1/
+#1736185808
+ls
+#1736185840
+cd ~lliang/cs260
+#1736185841
+ls
+#1736185848
+cd labs
+#1736185852
+cd lab1
+#1736185853
+ls
+#1736185860
+vim hello.cpp
+#1736185873
+cd ~/cs260/lab1/
+#1736185895
+ls
+#1736185904
+rm ./hello.cpp 
+#1736185922
+cp ~lliang/cs260/labs/lab1/hello.cpp ./hello.cpp
+#1736185923
+ls
+#1736185945
+g++ -o myhello hello.cpp
+#1736185948
+ls
+#1736185964
+./myhello 
+#1736186057
+cd..
+#1736186069
+tar cvf lat1.tar lab1
+#1736186074
+ls
+#1736186084
+mv lat1.tar lab1.tar
+#1736186085
+ls
+#1736186122
+mailx -s "lab1 tar file" -a lab1.tar joshua.alvarado1
+#1736186134
+mailx
+#1736186173
+mailx -f
+#1736186179
+mailx
+#1736186200
+mailx -f
+#1736186206
+ls
+#1736186227
+tar xvf lab1.tar 
+#1736186228
+ls
+#1736186233
+ls ./lab1
+#1736186248
+mkdir temp
+#1736186267
+tar xvf lab1.tar
+#1736186273
+ls
+#1736186279
+ls ./lab1
+#1736186284
+tar xvf lab1.tar temp
+#1736186315
+cp ./lab1.tar ./temp/lab1.tar
+#1736186316
+cd temp/
+#1736186317
+ls
+#1736186323
+tar xvf lab1.tar
+#1736186324
+ls
+#1736186327
+cd lab1
+#1736186328
+ls
+#1736186330
+cd ..
+#1736186337
+rm ./*
+#1736186347
+rm -rf ./* 
+#1736186348
+ls
+#1736186352
+cd ..
+#1736186356
+rm temp
+#1736186360
+rm -r temp
+#1736186361
+ls
+#1736186432
+cd lab1
+#1736186433
+ls
+#1736186479
+pwd
+#1736186626
+cd ..
+#1736186627
+cd..
+#1736186630
+cd cs260/
+#1736186632
+cd week1/
+#1736186651
+vim main.cpp
+#1736186950
+g++ main.cpp
+#1736186951
+l
+#1736186975
+rm a.out 
+#1736187001
+g++ -o myhello main.cpp
+#1736187085
+vim makefile
+#1736188169
+cp makefile makefile.old
+#1736188170
+vim makefile
+#1736188338
+vim ptr.h
+#1736196366
+ls
+#1736196372
+vim makefile
+#1736224329
+ls
+#1736224333
+make clean
+#1736224343
+vim makefile
+#1736225222
+cd ..
+#1736225228
+ls
+#1736225230
+cd temp/
+#1736225231
+ls
+#1736225238
+vim callstack.cpp 
+#1736188284
+cd cs260/
+#1736188286
+cd week1/
+#1736188292
+ls
+#1736188297
+make
+#1736188306
+make clean
+#1736188307
+ls
+#1736188311
+make
+#1736188312
+ls
+#1736188644
+vim makefile
+#1736188741
+ls
+#1736189156
+vim makefile
+#1736189201
+make
+#1736189554
+gdb main
+#1736196465
+vim makefile
+#1736196476
+vim makefile.old
+#1736196496
+ls
+#1736196500
+vim main.cpp
+#1736196631
+cd ..
+#1736196634
+cd lab1
+#1736196634
+ls
+#1736196642
+vim hello.cpp
+#1736196751
+ls
+#1736219922
+gdb main
+#1736219945
+gdb hello
+#1736220066
+gdb main
+#1736223590
+cd ..
+#1736223593
+cd temp/
+#1736223710
+g++ callstack.cpp 
+#1736223737
+vim callstack.cpp 
+#1736223759
+g++ callstack.cpp 
+#1736223761
+ls
+#1736223767
+a
+#1736223769
+./a
+#1736223772
+./a.out
+#1736224251
+ls
+#1736224262
+vim callstack.cpp 
+#1736224298
+vim callstack.o
+#1736224306
+bash ./callstack.o
+#1736224456
+vim callstack.o
+#1736224466
+vim makefile
+#1736224576
+make
+#1736224586
+vim makefile
+#1736224603
+make
+#1736224606
+ls
+#1736224609
+make clean
+#1736224615
+vim makefile
+#1736224834
+ls
+#1736224836
+make
+#1736224837
+ls
+#1736224840
+callstack.o
+#1736224844
+./callstack.o
+#1736224860
+chmod callstack.o +x
+#1736224867
+chmod +x callstack.o 
+#1736224870
+./callstack.o 
+#1736224878
+ls
+#1736224936
+callstack.o
+#1736224938
+./callstack.o 
+#1736224943
+make clean
+#1736224952
+vim makefile 
+#1736224960
+make clean
+#1736224974
+vim makefile 
+#1736225015
+make
+#1736225019
+ls
+#1736225023
+vim makefile 
+#1736225121
+make
+#1736225122
+ls
+#1736225123
+main
+#1736225126
+./main
+#1736225130
+vim makefile 
+#1736225150
+make clean
+#1736225152
+ls
+#1736225156
+rm ./main
+#1736225159
+make
+#1736225172
+vim makefile 
+#1736225198
+make
+#1736225200
+ls
+#1736225203
+./callstack 
+#1736225210
+gdb callstack
+#1736356969
+vim data.cpp
+#1736359992
+ls
+#1736360000
+mv data.cpp main.cpp
+#1736360002
+ls
+#1736360019
+mv main.cpp ./cs260/week1/wed/main.cpp
+#1736360024
+cd cs260/week1/wed/
+#1736360025
+ls
+#1736360032
+vim data.cpp
+#1736361445
+ls
+#1736361475
+vim main.cpp
+#1736361722
+make
+#1736361763
+vim main.cpp
+#1736362721
+vim data.cpp
+#1736393482
+vim main.cpp
+#1736393854
+make
+#1736393863
+a
+#1736393866
+make
+#1736393880
+vim main.cpp
+#1736393917
+make
+#1736393992
+ls
+#1736393996
+make clean
+#1736393997
+ls
+#1736393998
+make clean
+#1736394002
+make
+#1736394007
+a
+#1736394011
+make clean
+#1736394012
+a
+#1736394014
+make clean
+#1736394016
+make
+#1736394047
+clear
+#1736394058
+make
+#1736394147
+clear
+#1736394151
+make
+#1736394224
+clear
+#1736394226
+make
+#1736394241
+ls
+#1736394243
+main
+#1736394246
+./main
+#1736394262
+make
+#1736394267
+make clear
+#1736394269
+make clean
+#1736394270
+make
+#1736394273
+main
+#1736394275
+./main
+#1736394294
+gbd ./main
+#1736394300
+gdb ./main
+#1736394424
+ls
+#1736394431
+gdb ./main
+#1736394456
+gdb ./main.cpp
+#1736394529
+ls
+#1736394544
+make clean
+#1736394544
+ls
+#1736394547
+make
+#1736394551
+./main
+#1736394571
+make clean
+#1736394572
+make
+#1736394574
+./main
+#1736394600
+gdb ./main
+#1736394685
+ls
+#1736394685
+classSource  data.h  main      main.o    myutil.h
+#1736394689
+clear
+#1736394692
+gdb ./main
+#1736394798
+make clean
+#1736394811
+make
+#1736394814
+./main
+#1736394929
+make clean
+#1736394930
+make
+#1736394933
+./main
+#1736394981
+vim data.cpp
+#1736395014
+./main
+#1736395018
+make clean
+#1736395019
+make
+#1736395070
+vim data.cpp
+#1736395137
+gdb ./main
+#1736357034
+vim makefile
+#1736357046
+cd cs260/week1/wed/
+#1736357050
+vim makefile
+#1736360942
+make data.o
+#1736360961
+vim myutil.h
+#1736361078
+vim main.cpp
+#1736361358
+make
+#1736361397
+vim main.cpp
+#1736361521
+vim data.cpp
+#1736361532
+make
+#1736361829
+clear
+#1736361831
+make
+#1736361888
+clear
+#1736361893
+------------
+#1736361893
+-
+#1736361896
+make
+#1736362040
+.
+#1736362042
+make
+#1736362179
+a
+#1736362181
+make
+#1736362370
+a
+#1736362372
+make
+#1736362459
+vim myutil.h 
+#1736362543
+make
+#1736362612
+vim myutil.h 
+#1736362637
+make
+#1736362641
+a
+#1736362643
+make
+#1736363098
+mkdir classSource
+#1736363116
+cd classSource/
+#1736363124
+cp  -r ~lliang/cs260win25/week1/wed .
+#1736363124
+ls
+#1736363138
+cd ..
+#1736363142
+rm -r classSource/
+#1736363153
+mkdir classSource
+#1736363163
+cp  -r ~lliang/cs260win25/week1/wed ./classSource/
+#1736363165
+ls
+#1736363167
+cd classSource/
+#1736363168
+ls
+#1736363169
+cd wed
+#1736363173
+ls
+#1736363179
+mv * ..
+#1736363181
+ls
+#1736363182
+cd ..
+#1736363182
+ls
+#1736363187
+rm -r wed
+#1736363188
+ls
+#1736363743
+vim makefile
+#1736364427
+cd ~lliang/cs260/labs/lab2
+#1736364428
+ls
+#1736364437
+vim app.cpp
+#1736364470
+cd ~/cs260
+#1736364471
+ls
+#1736364476
+mkdir lab2
+#1736364510
+cp ~llian/cs260/labs/lab2/* ./lab2
+#1736364517
+cp ~lliang/cs260/labs/lab2/* ./lab2
+#1736364521
+ls
+#1736364523
+cd lab2
+#1736364524
+ls
+#1736395047
+cd..
+#1736395053
+cd week1/
+#1736395055
+cd wed/
+#1736395056
+ls
+#1736395060
+vim data.h
+#1736355771
+ls
+#1736355776
+cd cs260/
+#1736355777
+ls
+#1736355783
+cd week1
+#1736355784
+ls
+#1736355788
+mkdir mon wed
+#1736355797
+mv * ./mon
+#1736355826
+mv main.cpp ./mon
+#1736355832
+mv ./main.cpp ./mon
+#1736355841
+mv ./main.cpp ./mon/main.cpp
+#1736355856
+ls
+#1736355864
+mkdir wed
+#1736355866
+cd mon
+#1736355870
+rm wed
+#1736355874
+rm -r wed
+#1736355876
+ls
+#1736355878
+cd ..
+#1736355880
+cd wed/
+#1736355889
+vim main.cpp
+#1736355937
+vim makefile
+#1736356314
+make
+#1736356318
+vim makefile
+#1736356334
+make
+#1736356337
+vim makefile
+#1736356362
+make
+#1736356369
+vim makefile
+#1736356381
+make
+#1736356383
+vim makefile
+#1736356407
+make
+#1736356410
+vim makefile
+#1736356496
+cd ..
+#1736356497
+ls
+#1736356500
+cd mon
+#1736356501
+ls
+#1736356516
+cp myutil.h ../wed/myutil.h
+#1736356520
+cd ../wed
+#1736356521
+ls
+#1736356526
+make
+#1736356965
+vim data.h
+#1736393935
+vim main.cpp
+#1736396721
+cd cs260/
+#1736396722
+ls
+#1736396724
+cd lab2/
+#1736396725
+ls
+#1736396947
+vim linkedlist.h
+#1736405415
+cd cs260/lab2/
+#1736405416
+ls
+#1736405512
+vim linkedlist.h
+#1736405722
+ls
+#1736405725
+vim linkedlist.h
+#1736395564
+cd cs260/week1/wed/
+#1736395565
+ls
+#1736395574
+vim main.cpp
+#1736395626
+ls
+#1736395640
+vim data.h
+#1736395658
+make clean
+#1736395659
+make
+#1736395682
+vim myutil.h
+#1736395704
+make
+#1736395708
+./main
+#1736395717
+ls
+#1736395721
+ls-l
+#1736395724
+ls -l
+#1736395761
+vim data.cpp
+#1736395964
+make
+#1736395968
+./main
+#1736395978
+ls
+#1736395983
+vim main.cpp
+#1736396036
+cd..
+#1736396037
+ls
+#1736396039
+cd..
+#1736396040
+ls
+#1736396043
+cd lab2
+#1736396043
+ls
+#1736396187
+cd..
+#1736396188
+ls
+#1736396191
+cd lab2
+#1736396192
+ls
+#1736396938
+vim linkedlist.cpp 
+#1736396886
+cd cs260/
+#1736396887
+ls
+#1736396889
+cd lab2/
+#1736396890
+ls
+#1736397274
+cd ..
+#1736397274
+ls
+#1736397277
+cd week1/
+#1736397278
+ls
+#1736397280
+cd wed/
+#1736397281
+ls
+#1736397286
+cd data.cpp
+#1736397291
+vim data.cpp
+#1736397886
+cd ../..
+#1736397889
+cd lab2/
+#1736397889
+ls
+#1736404978
+make
+#1736410412
+cd ..
+#1736410413
+ls
+#1736410416
+cd week1/
+#1736410417
+ls
+#1736410419
+cd wed
+#1736410419
+ls
+#1736410425
+vim data.cpp
+#1736410883
+cd ../../lab2
+#1736410884
+ls
+#1736410899
+make
+#1736410942
+vim ~/.vimrc
+#1736411213
+vim data.cpp
+#1736412914
+make
+#1736413377
+ls
+#1736413380
+.app
+#1736413382
+./app
+#1736395190
+cd cs260/week1/wed/
+#1736395192
+make clear
+#1736395194
+make
+#1736395199
+gdb ./main
+#1736395434
+ls
+#1736395436
+gdb ./main
+#1736395472
+ls
+#1736395473
+ss
+#1736395473
+sad
+#1736395474
+[pfasd;lkfasdkjlaslkj;asdfhisadfkj
+#1736395485
+clear
+#1736395490
+ls
+#1736395497
+cd classSource/
+#1736395498
+ls
+#1736395500
+make
+#1736395501
+main
+#1736395503
+./main
+#1736395568
+ls
+#1736395578
+vim main.cpp
+#1736395630
+ls
+#1736395637
+vim data.h
+#1736395677
+vim myutil.h
+#1736395715
+ls
+#1736395727
+ls -l
+#1736395741
+vim data.cpp
+#1736396199
+cd ../../..
+#1736396199
+ls
+#1736396202
+cd lab2
+#1736396203
+ls
+#1736396929
+vim app.cpp
+#1736442119
+cd cs260/lab2
+#1736442125
+vim app.cpp
+#1736442062
+cd cs260/
+#1736442068
+cd lab2
+#1736442070
+ls
+#1736442076
+make clean
+#1736442082
+make
+#1736442216
+vim linkedlist.cpp 
+#1736442099
+cd cs260/lab2
+#1736442104
+ls
+#1736442221
+vim linkedlist.h
+#1736442740
+cd cs260/lab2
+#1736442742
+ls
+#1736442745
+make clean
+#1736442746
+make
+#1736442869
+make clean
+#1736442870
+make
+#1736444234
+make clean
+#1736444236
+make
+#1736444484
+cd ~lliang
+#1736444485
+ls
+#1736444495
+cd cs260/labs/lab2
+#1736444496
+ls
+#1736444505
+vim linkedlist.h
+#1736444629
+cd ~/cs260/lab2
+#1736444630
+ls
+#1736444634
+make
+#1736445051
+clear
+#1736445065
+make
+#1736445081
+clear
+#1736445082
+make
+#1736445091
+clear
+#1736445093
+make
+#1736445512
+ls
+#1736445515
+make
+#1736445517
+clear
+#1736445709
+mkdir temp
+#1736445712
+cd temp/
+#1736445713
+ls
+#1736445729
+cp ~lliang/cs260/labs/lab2/* ./
+#1736445730
+ls
+#1736445732
+make
+#1736445819
+cd..
+#1736445820
+make
+#1736445992
+make clean
+#1736445993
+make
+#1736445996
+ls
+#1736446000
+./app
+#1736456138
+cd cs260/lab2
+#1736456797
+la
+#1736456798
+ls
+#1736457121
+vim linkedlist.cpp
+#1736456139
+cd cs260/lab2
+#1736458306
+make
+#1736465129
+./app
+#1736465615
+make
+#1736466931
+./app
+#1736466946
+gdb ./app
+#1736466963
+./app
+#1736466975
+gdb ./app
+#1736467360
+make
+#1736467362
+gdb ./app
+#1736467367
+./app
+#1736467824
+gdb ./app
+#1736468119
+./app
+#1736468136
+gdb ./app
+#1736468171
+make
+#1736468174
+./app
+#1736468286
+gdb ./app
+#1736469082
+make
+#1736469085
+./app
+#1736469168
+gdb ./app
+#1736470569
+make
+#1736470661
+gdb ./app
+#1736470669
+./app
+#1736470945
+make
+#1736470947
+./app
+#1736456138
+cd cs260/lab2
+#1736457082
+ vim app.cpp
+#1736456116
+cd cs260/lab2
+#1736456802
+vim linkedlist.h
+#1736456876
+ls -a
+#1736456881
+vim linkedlist.h
+#1736456915
+ls
+#1736456917
+ls -a
+#1736457049
+vim linkedlist.h
+#1736654784
+cd cs260/week1/
+#1736654787
+cd ..
+#1736654791
+cd lab2
+#1736654793
+ls
+#1736654796
+./app
+#1736654875
+valgrind --leak-check=full app
+#1736654880
+valgrind
+#1736655333
+valgrind --leak-check=full app
+#1736655336
+valgrind --leak-check=full ./app
+#1736655346
+cd ..
+#1736655348
+cd lab1
+#1736655350
+ls
+#1736655354
+valgrind --leak-check=full ./hello
+#1736655906
+psftp
+#1736655944
+ftp
+#1736668051
+man ftp
+#1736668078
+mailx
+#1736668087
+man mailx
+#1736668253
+scp
+#1736668257
+man scp
+#1736668842
+pscp
+#1736669508
+scp
+#1736669530
+ls
+#1736669616
+cd ..
+#1736669617
+ls
+#1736670272
+ping 
+#1736670282
+ping www.google.com
+#1736670295
+ping 192.168.1.115
+#1736670343
+ping 50.38.57.246
+#1736670361
+ls
+#1736670555
+cd lab
+#1736670556
+cd lab1
+#1736670557
+ls
+#1736670588
+ls -R l. > lab1.txt
+#1736670600
+ls -R . > lab1.txt
+#1736670619
+make
+#1736670626
+make clean
+#1736670629
+make
+#1736670632
+make clean
+#1736670638
+make
+#1736670652
+cat makefile >> lab1.txt
+#1736670792
+vim lab1.txt 
+#1736670808
+rm lab1.txt 
+#1736670810
+cd ..
+#1736670825
+cat lab1/makefile > lab1.txt
+#1736670847
+rm lab1.txt
+#1736670848
+ls
+#1736670860
+ls -R lab1 > lab1.txt
+#1736670872
+cat lab1/makefile >> lab1.txt 
+#1736672073
+scp lab1.txt DESKTOP-HMR31HV@192.168.1.151
+#1736672102
+scp lab1.txt DESKTOP-HMR31HV@192.168.1.151:c:/Users/Josh/Documents
+#1736672143
+inet
+#1736672144
+net
+#1736672147
+na
+#1736672148
+ls
+#1736672163
+ifconfig
+#1736672723
+man ifconfig
+#1736672739
+ifconfig -a
+#1736672830
+curl
+#1736672841
+curl -s https://checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//'  

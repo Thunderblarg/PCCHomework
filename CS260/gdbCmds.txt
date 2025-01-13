@@ -1,0 +1,15 @@
+gdb <file>, doesn't work if the file doesn't exist, but you can use "file <file>" to load in the right file
+
+run, runs the file, takes command line arguments if you want (e.g. run 2048 24 4)
+
+break <num>, adds a breakpoint on a given line number
+
+step, steps the code
+
+print <expression>, prints out the value of whatever given individual variable value or expression
+
+list <linenumber>, prints out the source code from the program around whatever line number, also takes a function name as an input, will keep spitting out successive lines if given without arguments
+
+backtrace shows the current call stack
+
+info frame <frame number>, examines an individual
