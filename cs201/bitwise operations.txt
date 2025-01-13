@@ -1,0 +1,46 @@
+Bitwise operations:
+& Bitwise And
+| Bitwise Or
+^ Bitwise Xor
+~ Bitwise Not
+
+<< Bitwise left shift
+>> Bitwise right shift
+
+9 & 12 = 8
+
+1001 & 1100 =>
+
+1 0 0 1
+& & & &
+1 1 0 0 
+-------
+1 0 0 0 => 8d
+
+1 0 0 1
+| | | |
+1 1 0 0
+-------
+1 1 0 1 => 13d
+
+1 0 0 1
+^ ^ ^ ^
+1 1 0 0
+-------
+0 1 0 1
+
+1 0 0 1
+~ ~ ~ ~
+1 1 0 0
+-------
+
+
+Boolean operations:
+&&
+||
+
+------------
+
+2's complement and how we represent signed integers
+
+b7 b6 b5 b4 b3 b2 b1 b0

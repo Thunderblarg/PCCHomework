@@ -1,0 +1,23 @@
+32 bit
+1 bit sign
+8 bits exponent
+23 bits significand, not mantissa
+
+floating point number is:
+(1-)^sign bit * 2^(|e|-127) * (1 + |m|)
+
+The sign bit is interpreted as itself
+The 8 bits of the exponent are read as an unsigned integer
+
+the 23 bits of the significand are interpreted as a sum of negative powers of 2
+
+e.g. 10000000...0 (1 and 22 zeroes)
+then this is (1 * 2^-1 + 0 * 2^-2 + 0 * 2^3 ....)
+1100000...0
+
+
+
+0 1000000 1100...0 => 1 * 2^(128 - 127) * (1 + 0.75) => 2^1 * 1.75 = 3.5
+
+IF the exponent is all zeroes AND the signficand is NOT all 0s THEN the number becomes
+-1^s * (2^-126) * |m|
