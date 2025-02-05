@@ -66,8 +66,6 @@ void stackDump(Stack* s){
     }
 
     printf("dumping stack\n");
-    Node* iter = malloc(sizeof(Node));
-    iter = s->head;
 
     while (s->head){
         stackPop(s);
@@ -92,6 +90,21 @@ int main(){
     stackPush(stack, 'Q');
     stackPush(stack, '9');
     stackDump(stack);
+    stackPrint(stack);
+    stackPush(stack, '2');
+    stackPush(stack, 'Q');
+    stackPush(stack, 'x');
+    stackPush(stack, ';');
+    stackPrint(stack);
+    stackPop(stack);
+    stackPop(stack);
+    stackPrint(stack);
+    stackPush(stack, '.');
+    stackPop(stack);
+    stackPop(stack);
+    stackPush(stack, 'e');
+    stackDump(stack);
+
 
     stackDestroy(stack);    
     return 0;
