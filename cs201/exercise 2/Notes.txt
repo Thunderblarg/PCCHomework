@@ -1,0 +1,80 @@
+number of bits and the max number of exponent bits
+
+n = total number
+es = max number of exponent bits
+
+example:
+    n  = 8,
+    es = 2,
+
+
+b7 b6 b5 b4 b3 b2 b1 b0
+
+b7 = sign bit, 0 is positive, 1 is negative
+
+if the next bit is a 1, start counting 1s until you hit a 0, or you get to the end
+if the next bit is a 0, start counting 0s until you hit a 1, or you get to the end
+
+The number counted ends up being r.
+
+r = the number of regime bits
+                                                                                2
+if there are bits left over after counting the regime bits, count as many as //es// bits, those are the exponent bits (calling this e)
+
+if there are bits left over after counting the exponent, those are the significand //m// (mantissa?) bits
+
+if the first bit of the regime is 1:
+    (-1)^(sign bit) * 2^((r-1) * 2^es) * 2^e * (1 + |m|)
+
+if the first bit of the regime is 0:
+    (-1)^(sign bit) * 2^((-r) * 2^es) * 2^e * (1 + |m|)
+
+
+0 1110 11 1
+
+we start counting from B6 rightward, we have three 1s, so r = 3
+
+e = 3 somehow THIS ISN'T CLEAR ok so I guess we're counting //es// bits, which is 2, 1 and 2 (b2 and b1) make three
+
+|m| = 0.5
+
+1 * 2
+
+
+   1   * (2^     8   )  *  8     (  1.5  )                     
+(-1)^0 * (2^((2) * 2^2)) * 2^3 * (1 + |m|)
+                    4                 0.5
+
+= 1 * 256 * 8 * 1.5
+= 2048 * 1.5
+= 3072
+
+
+0 0001 11 1
+r = 3
+e = 3
+|m| = 0.5 i guess
+
+
+         2^(   -12    )    8    (  1.5  )                                            
+(-1)^0 * 2^((-3) * 2^2) * 2^e * (1 + |m|)
+=
+(-1)^0 * 2^-9 * 1.5
+
+
+significand is sum of negative powers, i.e. last bit (b0) is 1, and 2^-1 is 0.5
+
+
+
+
+
+
+
+                            unsigned
+if sign bit is 0: 2^(r-1) * 2^es * (1 + |m|)
+
+
+if sign bit is 1: -1 * 2^(r*2^es) * 2^e * (1 + |m|)
+
+
+
