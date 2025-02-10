@@ -1,49 +1,54 @@
-			.section .text
-			.extern readInt
-			.extern write_int
-			.global _start
+			.section .data
+array: .quad 0,0,0
+			
+			.section .rodata 
 
-req1:	.ascii "User, I require a number: "
+req1:	.ascii "User, I require a positive number: "
 req1Len	= . - req1
 
-req2:	.ascii "User, I require another number: "
+req2:	.ascii "User, I require another number of positivity: "
 req2Len	= . - req2
 
-req3:	.ascii "User, if you can believe it, I require YET ANOTHER number: "
+req3:	.ascii "User, if you can believe it, I require YET ANOTHER non-negative number: "
 req3Len	= . - req3
 
 printSum:	.ascii "USER, the numbers provided accumulate to A SUM OF: "
 printSumLen = . - printSum
 
-#season1:	.ascii	"1. Spring"
-#season1Len = . - season1
+newLine:	.ascii	"\n"
+newLineLen = . - newLine
 
-#season2:	.ascii "2. Summer"
-#season2Len = . - season2
+			.section .text
+			.extern readInt
+			.extern write_int
+			.global _start
 
-#season3:	.ascii "3. Fall"
-#season3Len = . - season3
+sumArray: 
+	# Takes two arguments, pointer to an array, length of the array
+	# Returns the sum of the array
+	push %rbp
+	mov %rsp, %rbp
 
-#season4 = 	.ascii "4. Winter"
-#season4Len = . - season4
+	mov 	$0, 	%rax
+	mov 	$0,		%rcx
+	
+sumLoop:
+	lea		(%rdi, %rcx, 8), 	%rdx
+	addq	(%rdx),		%rax
+	add		$1,			%rcx	# add 1 to the loop counter
+	cmp		%rcx,		%rsi
+	jg		sumLoop				# and jump back up
+	
+	mov %rbp, %rsp
+	pop %rbp
 
-#weather1:	.ascii "It's very rainy"
-#weather1Len = . - weather1
-
-#weather2:	.ascii "The air feels like it's on fire"
-#weather2Len = . - weather2
-
-#weather3:	.ascii "It's so windy"
-#weather3Len = . - weather3
-
-#weather4:	.ascii "Why does the air hurt?"
-#weather4Len = . - weather4
+	ret
 
 _start:
 
 	push %rbp					# setting up memory for our variables (the array)
 	mov %rsp, %rbp
-	sub $64, %rsp
+	sub $16, %rsp
 
 
 	mov 	$1, 		%rax	#printing out first request
@@ -52,8 +57,11 @@ _start:
 	mov 	$req1Len,	%rdx
 	syscall
 
-	call readInt              	# Call external function to read an integer from the user; result in %rax
-	mov 	%rax, -8(%rbp)      # Move the value read from %rax to -8 from our base pointer (first argument for fib)
+	call readInt             	# Call external function to read an integer from the user; result in %rax
+	
+	
+	lea		array(%rip), %rbx
+	movq	%rax,		(%rbx)
 
 	mov 	$1, 		%rax	#printing out second request
 	mov 	$0, 		%rdi
@@ -62,7 +70,9 @@ _start:
 	syscall
 
 	call 	readInt
-	mov 	%rax, 		-16(%rbp)
+
+	lea		array(%rip), %rbx
+	movq	%rax,		8(%rbx,1)
 
 	mov 	$1, 		%rax	#printing out third request
 	mov 	$0, 		%rdi
@@ -71,27 +81,20 @@ _start:
 	syscall
 
 	call 	readInt
-	mov 	%rax, 		-24(%rbp)
+
+	lea		array(%rip), %rbx
+	movq	%rax,		16(%rbx)
 
 	lea		-24(%rbp),	%rsi	# we put the address of our last array element into rsi
 								# and traverse upwards when we go through the loop
-	mov 	$0, 		%rdi	# loop counter
-	mov		$0,			%rax	# set rax to 0 and start accumulation in the loop
-
-loopin:
-
-	cmp		$3,			%rdi	# if (counter >= 3)
-	jge		wrapUp				# jump out
-
-	lea		(%rsi, %rdi, 8), 	%rdx
-	add		%rdx,		%rax
-	add		$1,			%rdi	# add 1 to the loop counter
-	jmp		loopin				# and jump back up
 
 
-wrapUp:
+	mov %rbx, %rdi 	# moves array pointer into first argument
+	mov $3, %rsi # moves len of array to second argument
+	
+	call sumArray
 
-	mov		%rax,		%r10
+	movq		%rax,		-16(%rbp)
 
 	mov 	$1, 		%rax	#printing out sum
 	mov 	$0, 		%rdi
@@ -99,13 +102,18 @@ wrapUp:
 	mov 	$printSumLen,	%rdx
 	syscall
 
-	mov		%r10,	%rdi	
+	movq		-16(%rbp),	%rdi	
 	call write_int
+
+	mov 	$1, 		%rax	#printing out sum
+	mov 	$0, 		%rdi
+	lea 	newLine(%rip), %rsi
+	mov 	$newLineLen,	%rdx
+	syscall
 
 	mov $0, %rdi
 	mov $60, %rax
 	syscall
-
 
 
 
