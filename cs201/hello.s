@@ -1,12 +1,12 @@
-	.file	"hello.c"
 	.text
+	.globl	_start
+	.file	"hello.c"
 	.section	.rodata
 .LC0:
 	.string	"Hello world!"
 	.text
-	.globl	main
-	.type	main, @function
-main:
+	.type	_start, @function
+_start:
 .LFB0:
 	.cfi_startproc
 	endbr64
@@ -24,7 +24,7 @@ main:
 	ret
 	.cfi_endproc
 .LFE0:
-	.size	main, .-main
+	.size	_start, .-_start
 	.ident	"GCC: (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0"
 	.section	.note.GNU-stack,"",@progbits
 	.section	.note.gnu.property,"a"

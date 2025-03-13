@@ -1,5 +1,8 @@
 {
     "files.associations": {
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "main": "cpp",
+        "pthread.h": "c",
+        "istream": "cpp"
     }
 }
